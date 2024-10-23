@@ -1,0 +1,105 @@
+/* About.css */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .parent-about{
+    max-width: 800px;
+   
+    margin-top: 80px;
+  }
+  #h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    color: #2980b9;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .mission p {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #34495e;
+  }
+  
+  .what-we-do ul, .why-choose-us ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .what-we-do li, .why-choose-us li {
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  .what-we-do li:before, .why-choose-us li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+  }
+  
+  .why-choose-us li strong {
+    color: #2c3e50;
+  }
+  
+  .join-us {
+    background-color: #f7f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 600px) {
+    .about-container {
+      padding: 20px 10px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  }
