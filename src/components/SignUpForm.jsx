@@ -7,7 +7,7 @@ const SignupForm = ({
   signupStep,
   firstName,
   lastName,
-  phone,
+  phoneNumber,
   email,
   password,
   confirmPassword,
@@ -27,7 +27,7 @@ const SignupForm = ({
     case 2:
       return (
         <>
-          <InputField label="Phone Number" type="tel" value={phone} onChange={(e) => handleInputChange('phone', e.target.value)} placeholder="Enter your phone number" error={phoneError}/>
+          <InputField label="Phone Number" type="tel" value={phoneNumber} onChange={(e) => handleInputChange('phoneNumber', e.target.value)} placeholder="Enter your phone number" error={phoneError}/>
           <InputField label="Email" type="email" value={email} onChange={(e) => handleInputChange('email', e.target.value)} placeholder="Enter your email"/>
         </>
       );
